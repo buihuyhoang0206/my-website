@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bùi Huy Hoàng – Liên hệ hỗ trợ và hợp tác lập trình Web</title>
+    
+    <meta name="description" content="Liên hệ ngay với Bùi Huy Hoàng, sinh viên CNTT trường Đại học Gia Định để gửi lời nhắn hợp tác làm việc, góp ý dự án web hoặc yêu cầu hỗ trợ kỹ thuật.">
+    
+    <meta property="og:title" content="Bùi Huy Hoàng – Liên hệ hỗ trợ và hợp tác lập trình Web">
+    <meta property="og:description" content="Liên hệ ngay với Bùi Huy Hoàng, sinh viên CNTT trường Đại học Gia Định để gửi lời nhắn hợp tác làm việc.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+</head>
+<body>
+
+    <header>
+        <h1>Bùi Huy Hoàng</h1>
+        <p>Sinh viên ngành Công nghệ thông tin - Đại học Gia Định (GDU)</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Trang chủ</a> | 
+        <a href="about.html">Giới thiệu</a> | 
+        <a href="contact.html">Liên hệ</a> |
+        <a href="https://github.com/hoangbui" target="_blank" rel="noopener">GitHub cá nhân</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Liên hệ với tôi</h2>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    
+                    <p>
+                        <label for="name">Họ và tên:</label> <br>
+                        <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Nhập họ và tên">
+                    </p>
+                    
+                    <div>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" id="email" name="email" required placeholder="email@example.com">
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <label for="phone">Số điện thoại:</label> <br>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="0123456789">
+                        
+                        <br><br>
+                        <label for="birthdate">Ngày sinh:</label> <br>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    
+                    <br>
+                    <p>
+                        <label for="university">Trường đại học:</label> <br>
+                        <input type="text" id="university" list="universities" placeholder="Nhập tên trường">
+                        
+                        <datalist id="universities">
+                            <option value="Đại học Gia Định (GDU)">
+                            <option value="Đại học Bách khoa Hà Nội">
+                            <option value="Đại học Quốc gia Hà Nội">
+                            <option value="Đại học FPT">
+                            <option value="Đại học Công nghiệp Hà Nội">
+                        </datalist>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+                    
+                    <p>
+                        <label for="subject-dropdown">Kênh liên hệ ưu tiên:</label> <br>
+                        <select id="subject-dropdown" name="subject_dropdown">
+                            <option value="-Email-">Email</option>
+                            <option value="-Phone-">Số điện thoại</option>
+                            <option value="-Zalo-">Zalo</option>
+                            <option value="-khác-">Khác</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="message">Tin nhắn:</label> <br>
+                        <textarea id="message" name="message" rows="5" required placeholder="Nhập nội dung lời nhắn tại đây..."></textarea>
+                    </p>
+                    
+                    <div>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Đồng ý nhận thông tin phản hồi</label>
+                    </div>
+                </fieldset>
+                
+                <p>
+                    <button type="submit">Gửi thông tin</button>
+                    <button type="reset">Xóa làm lại</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:buihuyhoanga10@gmail.com">buihuyhoanga10@gmail.com</a> <br>
+            Số điện thoại: <a href="tel:0394511206">0394511206</a>
+        </address>
+        <p>Bản quyền &copy; 2026 Bùi Huy Hoàng.</p>
+    </footer>
+
+</body>
+</html>
